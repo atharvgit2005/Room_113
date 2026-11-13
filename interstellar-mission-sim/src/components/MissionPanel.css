@@ -1,0 +1,190 @@
+.mission-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 320px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.mission-panel h2 {
+  margin: 0 0 15px 0;
+  color: #ff6b6b;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #ff6b6b;
+  padding-bottom: 5px;
+}
+
+.mission-panel h3 {
+  margin: 15px 0 10px 0;
+  color: #88ccff;
+  font-size: 14px;
+  border-left: 3px solid #88ccff;
+  padding-left: 8px;
+}
+
+.control-section {
+  margin-bottom: 20px;
+}
+
+.propulsion-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.propulsion-option {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.propulsion-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.radio-label {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.radio-label input[type="radio"] {
+  display: none;
+}
+
+.radio-custom {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #88ccff;
+  border-radius: 50%;
+  margin-top: 2px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.radio-label input[type="radio"]:checked + .radio-custom::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #88ccff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.propulsion-info {
+  flex: 1;
+}
+
+.propulsion-name {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.propulsion-details {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.propulsion-description {
+  font-size: 10px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.launch-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.launch-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #aaa;
+  font-size: 11px;
+}
+
+.launch-controls input[type="date"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #88ccff;
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  font-family: inherit;
+}
+
+.chase-button {
+  width: 100%;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.chase-button:hover {
+  background: linear-gradient(45deg, #ff5252, #ff7979);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.chase-description {
+  text-align: center;
+  font-size: 10px;
+  color: #aaa;
+  margin: 8px 0 0 0;
+  font-style: italic;
+}
+
+.constraints {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.constraint-item {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border-radius: 4px;
+  border-left: 2px solid #ff6b6b;
+}
+
+.constraint-label {
+  color: #aaa;
+  font-size: 10px;
+}
+
+.constraint-value {
+  color: #fff;
+  font-weight: bold;
+}

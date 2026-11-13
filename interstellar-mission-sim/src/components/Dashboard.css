@@ -1,0 +1,108 @@
+.dashboard {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.dashboard h2 {
+  margin: 0 0 15px 0;
+  color: #00ff88;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #00ff88;
+  padding-bottom: 5px;
+}
+
+.dashboard h3 {
+  margin: 15px 0 10px 0;
+  color: #88ccff;
+  font-size: 14px;
+  border-left: 3px solid #88ccff;
+  padding-left: 8px;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.data-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.data-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border-radius: 5px;
+  border-left: 2px solid #00ff88;
+}
+
+.data-item label {
+  display: block;
+  color: #aaa;
+  font-size: 10px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.mission-data {
+  display: grid;
+  gap: 8px;
+}
+
+.status.feasible {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.status.infeasible {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.tooltip {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.tooltip p {
+  margin: 5px 0;
+}
+
+.tooltip strong {
+  color: #88ccff;
+}
+
+.api-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.status-indicator.success {
+  color: #00ff88;
+}
+
+.status-indicator.warning {
+  color: #ffd700;
+}
+
+.status-text {
+  color: #aaa;
+}
